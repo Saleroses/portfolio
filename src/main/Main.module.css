@@ -16,8 +16,7 @@
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
-
-
+    clip-path: polygon(0.00% 0.00%,100.00% 0.00%,100.00% 80.86%,15.74% 100%,0.00% 80.97%);
 }
 
 .foto:after {
@@ -57,5 +56,22 @@ h1 {
     font-size: 24px;
     font-weight: 400;
     color: white;
+    line-height: 0.5;
+}
+
+.text2 {
+    position: relative;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    line-height: 0.5;
+}
+
+.specialized {
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    line-height: 0.5;
 }
 
