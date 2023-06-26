@@ -1,0 +1,23 @@
+
+.container {
+    padding-top: 5vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+
+.skills {
+    width: 77%;
+    text-align: left;
+    margin: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+}

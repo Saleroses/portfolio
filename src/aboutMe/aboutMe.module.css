@@ -1,0 +1,65 @@
+
+.container {
+    width: 77%;
+    margin: auto;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.foto {
+    height: 400px;
+    z-index: 1;
+    box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
+}
+
+.text {
+    padding-left: 40px;
+    max-height: max-content;
+}
+
+.header {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.specialized {
+    font-family: "Raleway", san-serif, serif;
+    color: #222;
+    font-size: 19px;
+}
+
+.description {
+    padding-top: 30px;
+    font-size: 16px;
+    line-height: 1.65;
+    font-family: "Open Sans", sans-serif;
+}
+
+.button {
+    margin: 360px 0px 0px 40px;
+    font-family: "Raleway", san-serif, serif;
+    position: absolute;
+    background-color: #222;
+    padding: 10px 20px;
+    border: 2px solid #222;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-transition: .2s background-color ease;
+    -o-transition: .2s background-color ease;
+    transition: .2s background-color ease;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+button:hover, button:focus {
+    color: #222;
+    background-color: white;
+}
+
+
+
+
+

@@ -28,23 +28,21 @@
     right: 0;
     background-color: #000;
     z-index: 2;
-    opacity: .4;
+    opacity: .5;
 }
 
 .container {
     position: relative;
-    width: 1200px;
+    width: 77%;
     z-index: 4;
     text-align: left;
     margin: auto;
-    padding-left: 100px;
-    padding-top: 230px;
-    
+    padding-top: 30vh;
 }
 
 h1 {
     position: relative;
-    font-size: 88px;
+    font-size: 85px;
     font-weight: 800;
     color: #fff;
     line-height: 0.8;
