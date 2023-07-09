@@ -1,0 +1,32 @@
+
+.container {
+    padding-top: 5vh;
+    height: auto;
+    width: 100%;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+}
+
+.work {
+    padding-top: 7vh;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.workImg {
+    padding: 10px;
+    height: 280px;
+}
