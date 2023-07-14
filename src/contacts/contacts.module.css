@@ -1,0 +1,42 @@
+
+
+
+.container {
+    margin: auto;
+    height: auto;
+    width: 100%;
+}
+
+
+
+.title {
+    padding-top: 70px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+}
+
+.button {
+    margin: 40px 0px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-family: "Raleway", san-serif, serif;
+    background-color: #222;
+    padding: 10px 20px;
+    border: 2px solid #222;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-transition: .2s background-color ease;
+    -o-transition: .2s background-color ease;
+    transition: .2s background-color ease;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+button:hover, button:focus {
+    color: #222;
+    background-color: white;
+}
