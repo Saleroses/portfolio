@@ -73,3 +73,17 @@ h1 {
     line-height: 0.5;
 }
 
+.cursorBlink {
+    font-weight:350;
+    font-size:30px;
+    color: white;
+    width:5px;
+    overflow:hidden;
+    animation:blink 1s steps(5,start) infinite
+}
+@keyframes blink{from,to{color:transparent}50%{color:white}}
+@-moz-keyframes blink{from,to{color:transparent}50%{color:white}}
+@-webkit-keyframes blink{from,to{color:transparent}50%{color:white}}
+@-ms-keyframes blink{from,to{color:transparent}50%{color:white}}
+@-o-keyframes blink{from,to{color:transparent}50%{color:white}}
+

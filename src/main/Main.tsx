@@ -10,9 +10,9 @@ const Main = () => {
 
 
     const SpecializedListText = [
-        "Software engineer",
         "React",
         "Type Script",
+        'Redux',
         "Java Script",
     ]
 
@@ -25,7 +25,7 @@ const Main = () => {
             if (currentIndex < props.text.length) {
                 const timeout = setTimeout(() => {
                     setCurrentText(props.text[currentIndex]);
-                    setCurrentIndex(prevIndex => prevIndex + 1);
+                    setCurrentIndex(currentIndex + 1);
                 }, props.delay);
 
                 return () => clearTimeout(timeout);
@@ -37,6 +37,11 @@ const Main = () => {
         return <span>{currentText}</span>;
     };
 
+
+
+
+
+
     return (
         <div className={s.mainBlock}>
             <div className={s.foto}>
@@ -46,6 +51,7 @@ const Main = () => {
                     <p className={s.text2}><span>{"Specialized in "}</span>
                         <span className={s.specialized}><Typewriter text={SpecializedListText} delay={2000}/>
                         </span>
+                        <span className={s.cursorBlink}>|</span>
                     </p>
                 </div>
             </div>
