@@ -1,14 +1,41 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import s from './Main.module.css'
-import {Typewriter} from "../header/Typewriter";
 
+export type TypewriterPropsType = {
+    text: Array<string>,
+    delay: number
+}
 
 const Main = () => {
-    let SpecializedListText = [
+
+
+    const SpecializedListText = [
+        "Software engineer",
         "React",
         "Type Script",
         "Java Script",
     ]
+
+    const Typewriter = (props: TypewriterPropsType) => {
+        const [currentText, setCurrentText] =  useState('');
+        const [currentIndex, setCurrentIndex] = useState(0);
+
+
+        useEffect(() => {
+            if (currentIndex < props.text.length) {
+                const timeout = setTimeout(() => {
+                    setCurrentText(props.text[currentIndex]);
+                    setCurrentIndex(prevIndex => prevIndex + 1);
+                }, props.delay);
+
+                return () => clearTimeout(timeout);
+            } else {
+                setCurrentIndex(0)
+            }
+        }, [currentIndex, props.delay, props.text]);
+
+        return <span>{currentText}</span>;
+    };
 
     return (
         <div className={s.mainBlock}>
@@ -17,7 +44,7 @@ const Main = () => {
                     <h1>Привет! Я Егор</h1>
                     <span className={s.text}>Frontend developer </span>
                     <p className={s.text2}><span>{"Specialized in "}</span>
-                        <span className={s.specialized}><Typewriter text={SpecializedListText} delay={100}/>
+                        <span className={s.specialized}><Typewriter text={SpecializedListText} delay={2000}/>
                         </span>
                     </p>
                 </div>
