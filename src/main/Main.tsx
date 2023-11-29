@@ -10,15 +10,17 @@ const Main = () => {
 
 
     const SpecializedListText = [
-        "React",
         "Type Script",
         'Redux',
         "Java Script",
+        "React",
     ]
 
     const Typewriter = (props: TypewriterPropsType) => {
         const [currentText, setCurrentText] =  useState('');
         const [currentIndex, setCurrentIndex] = useState(0);
+        const [finishText, setFinishText] =  useState('');
+        const [finishIndex, setFinishIndex] = useState(0);
 
 
         useEffect(() => {
@@ -32,7 +34,8 @@ const Main = () => {
             } else {
                 setCurrentIndex(0)
             }
-        }, [currentIndex, props.delay, props.text]);
+
+        }, [currentIndex, props.delay]);
 
         return <span>{currentText}</span>;
     };

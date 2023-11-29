@@ -77,9 +77,9 @@ h1 {
     font-weight:350;
     font-size:30px;
     color: white;
-    width:5px;
+    width:7px;
     overflow:hidden;
-    animation:blink 1s steps(5,start) infinite
+    animation:blink 1s infinite
 }
 @keyframes blink{from,to{color:transparent}50%{color:white}}
 @-moz-keyframes blink{from,to{color:transparent}50%{color:white}}
