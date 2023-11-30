@@ -19,8 +19,6 @@ const Main = () => {
     const Typewriter = (props: TypewriterPropsType) => {
         const [currentText, setCurrentText] =  useState('');
         const [currentIndex, setCurrentIndex] = useState(0);
-        const [finishText, setFinishText] =  useState('');
-        const [finishIndex, setFinishIndex] = useState(0);
 
 
         useEffect(() => {
@@ -35,14 +33,10 @@ const Main = () => {
                 setCurrentIndex(0)
             }
 
-        }, [currentIndex, props.delay]);
+        }, [props.delay, props.text, currentIndex]);
 
         return <span>{currentText}</span>;
     };
-
-
-
-
 
 
     return (
